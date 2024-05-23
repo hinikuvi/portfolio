@@ -1,0 +1,381 @@
+@font-face {
+  font-family: 'Masa Groovy';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+       url('fonts\Masa Groovy.otf"') format('otf');
+}
+
+@font-face {
+  font-family: 'Gilroy Medium';
+  font-style: normal;
+  font-weight: 300;
+  src: local(''),
+       url('fonts\gilroy-medium.ttf') format('ttf');
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+html {
+    background-color: #E9E1D5;
+}
+
+h1, h2 {
+    font-family: 'Masa Groovy', sans-serif;
+}
+
+.container {
+    max-width: 2000px;
+    margin-right: 0;
+    margin-left: 0;
+}
+
+/*HEADER*/
+
+.header-container {
+    background-image: url("img\background-header.png");
+}
+
+.portfolio-header {
+    font-family: 'Masa Groovy', sans-serif;
+    font-size: 148px;
+    text-align: center;
+    letter-spacing: 6px;
+    padding-top: 60px;
+    margin-bottom: -10px;
+    color: #7C3136;
+    text-shadow: 2px 0px 0px white, 0px 2px 0px white, -2px 0px 0px white, 0px -2px 0px white, 8px 0px 0px #4C1D20;
+}
+
+.nav-list {
+    font-size: 24px;
+    padding-top: 0px;
+    padding-left: 15%;
+    padding-right: 15%;
+    letter-spacing: 3px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    color: #7C3136;
+    text-shadow: 1px 0px 0px white, 4px 0px 0px #4C1D20;
+}
+
+.subtitle {
+    font-family: 'Gilroy Medium';
+    font-size: 15px;
+    padding-top: 80px;
+    padding-right: 7%;
+    text-align: end;
+    text-transform: uppercase;
+    color: #4C1D20;
+    opacity: 30%;
+}
+
+/*ABOUT ME*/
+
+.first-section-headers {
+    font-size: 50px;
+    padding-top: 30px;
+    padding-left: 5%;
+    letter-spacing: 3px;
+    color: #7C3136;
+    text-shadow: 1px 0px 0px white, 4px 0px 0px #4C1D20;
+}
+
+.section-about-me-photo {
+    display: flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
+
+.section-about-me-photo-item {
+        height: 376px;
+        width: 100%;
+}
+
+.greeting-heading {
+    font-family: 'Masa Groovy';
+    font-size: 148px;
+    margin: 0;
+    text-align: left;
+    letter-spacing: 6px;
+    color: #7C3136;
+    text-shadow: 2px 0px 0px white, 0px 2px 0px white, -2px 0px 0px white, 0px -2px 0px white, 8px 0px 0px #4C1D20;
+}
+
+.section-about-me-intro {
+    font-family: 'Gilroy Medium';
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.section-about-me-icon {
+    padding-left: 10px;
+    padding-right: 30px;
+    align-content: top;
+}
+
+.section-about-me-media {
+    height: 30px;
+}
+
+/*WHAT I CAN DO*/
+
+.section-do-list {
+    display: flex;
+    justify-content:space-around;
+}
+
+.do-software {
+    height: 300px;
+    padding-left: 15%;
+}
+
+.section-do-heading {
+    font-family: 'Masa Groovy';
+    padding-left: 15%;
+    margin: 0;
+    font-size: 40px;
+    letter-spacing: 2px;
+    color: #7C3136;
+    text-shadow: 1px 0px 0px white, 4px 0px 0px #4C1D20;
+}
+
+.section-do-skills {
+    font-family: 'Gilroy Medium';
+    font-size: 16px;
+    list-style-type: disc;
+    padding-left: 15%;
+    color: #4C1D20;
+    text-shadow: 1px 0px 0px #D3B054;
+}
+
+.section-do-education {
+    font-family: 'Gilroy Medium';
+    font-size: 16px;
+    padding-left: 15%;
+    padding-top: 30px;
+    color: #4C1D20;
+    text-shadow: 1px 0px 0px #D3B054;
+    text-transform: uppercase;
+}
+
+.section-do-interest {
+    font-family: 'Gilroy Medium';
+    font-size: 16px;
+    padding-left: 25%;
+    padding-top: 10px;
+    color: white;
+    text-shadow: 1px 0px 0px #4C1D20;
+    text-transform: uppercase;
+}
+
+.section-do-click {
+    font-family: 'Masa Groovy';
+    font-size: 37px;
+    color: white;
+    margin-top: -32px;
+    padding-left: 210px;;
+}
+
+.section-do-click:hover {
+    text-shadow: 3px 0px 0px #4C1D20;
+    transition: all 0.3s linear;
+}
+
+/*3D MODELING*/
+
+.section-3d {
+    padding-bottom: 10px;
+}
+
+/*3D WORKS*/
+
+.three-d-image {
+    height: 550px;
+    padding-left: 10%;
+}
+
+.scrolling-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    .card {
+      flex: 0 0 auto;
+    }
+  }
+
+  :root {
+    --scrollbarBg: #E9E1D5;
+    --scrollbarThumb: #4C1D20;
+    --scrollbarWidth: 12px;
+    --scrollbarBorder: 3px solid var(--scrollbarBg);
+    --scrollbarBorderRadius: calc(var(--scrollbarWidth) / 2);
+  }
+  .container {
+    scrollbar-width: var(--scrollbarWidth);
+    scrollbar-color: var(--scrollbarThumb) var(--scrollbarBg);
+  }
+  .container::-webkit-scrollbar {
+    width: var(--scrollbarWidth);
+  }
+  .container::-webkit-scrollbar-track {
+    background: var(--scrollbarBg);
+    border-radius: var(--scrollbarBorderRadius);
+  }
+  .container::-webkit-scrollbar-thumb {
+    background-color: var(--scrollbarThumb);
+    border-radius: var(--scrollbarBorderRadius);
+    border: var(--scrollbarBorder);
+  }
+
+/*DIGITAL ARTS*/
+
+.digital-header {
+    margin:0;
+}
+
+.cow {
+    height: 500px;
+    padding-left: 30%;
+    display: inline-flex;
+}
+
+.octopus {
+    height: 470px;
+    padding-left: 10%;
+    padding-top: -30px;
+    display: inline-flexbox;
+}
+
+.birds {
+    height: 450px;
+    padding-left: 50px;
+    padding-top: 100px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.witch {
+    height: 560px;
+    padding-left: 50px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.flowers {
+    height: 450px;
+    padding-left: 50px;
+    padding-top: 80px;
+    vertical-align: bottom;
+    display: inline-block;
+}
+
+.wine {
+    height: 500px;
+    padding-left: 25%;
+    display: inline-flex;
+}
+
+/*PRICE*/
+
+.price {
+    padding-left: 10%;
+    padding-top: 0px;
+    padding-bottom: 20px;
+    margin: 0px;
+    text-align: left;
+}
+
+.section-price-item:hover {
+    font-size: 0;
+}
+
+.section-price-item:hover:after {
+    content: attr(data-hover);
+    font-size: 48px;
+}
+
+.coin {
+    height: 70px;
+    padding-left: 10%;
+    border-color: 20px white;
+    display: inline;
+}
+
+.section-price-item {
+    font-family: 'Masa Groovy', sans-serif;
+    padding-left: 40px;
+    font-size: 48px;
+    text-align: center;
+    letter-spacing: 6px;
+    color: #7C3136;
+    text-shadow: 2px 0px 0px white, 0px 2px 0px white, -2px 0px 0px white, 0px -2px 0px white;
+    display: inline;
+}
+
+
+/*CONTACTS*/
+
+.contacts {
+    padding-left: 10%;
+    padding-top: 60px;
+    padding-bottom: 20px;
+    margin: 0px;
+    text-align: left;
+}
+
+.contacts-list {
+    padding-left: 10%;
+}
+
+.contact-field {
+    margin-left: 120px;
+    border: 4px solid #AD8C93;
+    padding: 10px 20px 10px 20px;
+    margin: 20px;
+    width: 400px;
+    border-radius: 60px 60px 60px 60px;
+    font-family: 'Gilroy Medium';
+    font-size: 20px;
+    text-align: left;
+    color: #4C1D20;
+}
+
+.contacts-send {
+    font-family: 'Gilroy Medium';
+    font-size: 80px;
+    text-align: left;
+    color: white;
+    padding-bottom: 10px;
+    padding-left: 20%;
+}
+
+.media-table {
+    float: inline-end;
+}
+
+.contacts-columns {
+    display: flex;
+    justify-content:space-around;
+}
+
+.media-icon {
+    height: 50px;
+}
+
+/*FOOTER*/
+
+.footer-container {
+    display: block;
+}
+
